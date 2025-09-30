@@ -21,7 +21,7 @@ app.post("/send-otp", async (req, res) => {
       body: new URLSearchParams({
         apikey: process.env.ELASTIC_API_KEY,
         subject: "رمز التحقق - Najdah App",
-        from: "your_email@yourdomain.com", // بريدك الموثق في Elastic Email
+        from: "basharkhtab9@gmail.com", // بريدك الموثق في Elastic Email
         to: email,
         bodyHtml: `<h2>رمز التحقق: <b>${otp}</b></h2>`,
         bodyText: `رمز التحقق الخاص بك هو: ${otp}`,
